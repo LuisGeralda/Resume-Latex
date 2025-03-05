@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Luis Geralda
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Uncomment a favorite or leave default:
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear header/footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1.20in}
+\addtolength{\topmargin}{-0.70in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Make PDF machine-readable/ATS-friendly
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=3pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%% RESUME STARTS HERE %%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape LUIS SERGE OLIVIER GERALDA TUTAB}\\
+  \vspace{2pt}
+  Fremont, CA \quad
+  \raisebox{-0.1\height}\faPhone\ (470) 685-4006 \quad
+  \href{mailto:geraldaolivier@gmail.com}{\faEnvelope\ \underline{geraldaolivier@gmail.com}} \quad
+  \href{https://linkedin.com/in/luisgeralda}{\faLinkedin\ \underline{linkedin.com/in/luisgeralda}} \quad
+  \href{https://github.com/LuisGeralda}{\faGithub\ \underline{github.com/LuisGeralda}} \quad
+  \href{https://sites.google.com/view/luis-geralda/home}{\faBriefcase\ \underline{Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSubHeadingListStart
+\resumeItem{5G/LTE System Validation Engineer with end-to-end experience on EPC (eNB, MME, S-GW, P-GW, HSS) and 5G NR (NSA/SA) including gNodeB, AMF, UPF. Skilled in 3GPP protocols (S1AP, X2AP, NGAP, XnAP, DIAMETER, SIP), mmWave \& sub-6, multi-RAT connectivity (ENDC, NGENDC), and advanced log analysis (QXDM, QCAT, Wireshark). Familiar with IMS (PCSCF, I-CSCF, TAS), O-RAN fundamentals, open-source 5G (srsRAN, Open5Gs), AI-based signal processing fundementals, and MATLAB 5G Toolbox.}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Wireless/RAN:} 5G NSA/SA, LTE eNB/gNB, 3GPP Rel8--Rel18, TDD/FDD, LAA (Band46), CBRS (Band48), mMIMO}
+  \resumeItem{\textbf{Core Networks:} EPC (MME, SGW, PGW, HSS), 5G Core (AMF, SMF, UPF), IPsec, IMS (SIP, DIAMETER)}
+  \resumeItem{\textbf{Protocol Stack:} PHY, MAC, RRC, RLC, PDCP; measurement events (A1--B2); NB-IoT, CAT-1, CAT-M, CAT-4}
+  \resumeItem{\textbf{Tools/Logs:} QXDM, QCAT, Wireshark, XCAP/XCAL, PCAT, BTSlog, Python, Bash, ADB, iOS sysdiagnose}
+  \resumeItem{\textbf{Optimization:} Carrier Aggregation, beamforming, DRX, eDRX, QoS (5QI), bug reporting (JIRA), UL TCP Boost}
+  \resumeItem{\textbf{O-RAN/Open-Source:} eCPRI, F1, E2, A1, O1, srsRAN, Open5Gs, OSMOCOM}
+  \resumeItem{\textbf{Soft Skills:} Documentation, training, customer interfacing, cross-functional collaboration}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+%--- Corning 5G System Validation
+\resumeSubheading
+{Corning Optical Communication (F2G Solutions)}{Aug 2023 -- Present}
+{5G System Validation Engineer}{Milpitas, CA}
+\resumeItemListStart
+  \resumeItem{Led validation of two new 5G radio units (N3RU, M3L) across 50+ scenarios for indoor/outdoor coverage, reducing qualification time by 25\%.}
+  \resumeItem{Integrated \& optimized 5G NSA networks (Druid Raemis 5G Core + Aricent 4G Core), refining handover thresholds and scheduling to cut call drops by 20\%.}
+  \resumeItem{Managed a 50-device UE test fleet (Android/iOS) for real-world OTA scenarios; automated user flows via Python, Bash, ADB, and Apple Shortcuts, reducing manual testing by 40\%.}
+  \resumeItem{Developed system-level test plans, feature scripts, and troubleshooting playbooks utilized by R\&D and customer-facing teams.}
+\resumeItemListEnd
+
+%--- Corning QA
+\resumeSubheading
+{Corning Optical Communication (F2G Solutions)}{Sep 2022 -- Aug 2023}
+{5G QA Test Engineer}{Milpitas, CA}
+\resumeItemListStart
+  \resumeItem{Executed regression, functional, and performance testing for 5G Sub6/mmWave solutions; monitored KPIs (RSRP, RSRQ, throughput) daily, identifying 15+ critical defects before release.}
+  \resumeItem{Built automation scripts (Python, Bash) to parse logs (QXDM, QCAT, Wireshark), accelerating root-cause analysis by 30\%.}
+  \resumeItem{Coordinated with product managers and dev teams to refine specs, debug RF anomalies, and ensure stable software/hardware releases.}
+\resumeItemListEnd
+
+%--- Nokia
+\resumeSubheading
+{Nokia North America (F2G Solutions)}{Apr 2021 -- Sep 2022}
+{4G \& 5G System Engineer Interoperability}{Dallas, TX}
+\resumeItemListStart
+  \resumeItem{\textbf{Broad Test Scope:} Planned \& executed 300+ test cases (from a 3000+ case library) covering registration, mobility (handovers, reselections, redirections), carrier aggregation, call processing (VoLTE, VoNR, CFSB, e911), TTI Bundling, MFBI, and more on TMO, AT\&T, and Verizon (low, mid, high bands).}
+  \resumeItem{\textbf{Device Testing (Qualcomm, Samsung, MediaTek):} Validated IOT compliance of 5G/LTE smartphones with chipset vendors, analyzing device logs \& multi-RAT features (LTE-WCDMA, LTE-5G NSA) to ensure stable connectivity.}
+  \resumeItem{\textbf{Radio Module Qualification:} Performed commissioning of Nokia radio modules (AHIB, ARZB, AHFB, UHBA, AHLOA, FRIJ, AZRA) and Baseband Units (ABIA, ASIA, ASIK, ABIL), enabling expansions for new frequency bands or capacity upgrades.}
+  \resumeItem{\textbf{OAM \& BTS Upgrades:} Maintained Nokia RAN software (SBTS20A, SBTS21A, SBTS22R2/3) with IPsec gateway configs; minimized lab downtime by 15\% via parallel testing.}
+  \resumeItem{\textbf{Lab \& Field Troubleshooting:} Used QXDM, QCAT, PCAT, QPST, QMI Test Pro, Wireshark, EMIL, Syslog, MAC TTI Trace logs, \& BTS counters to isolate eNB/gNB or UE issues; provided on-site or remote support to test teams and customer labs.}
+  \resumeItem{\textbf{Optimization:} Tuned thresholds, offsets, and hysteresis to improve handovers by 20\% throughput; integrated NB-IoT/CAT-M devices and tested VoLTE/VoNR voice continuity.}
+  \resumeItem{\textbf{Cross-Functional Collaboration:} Guided newly hired engineers on 3GPP-based documentation, log analysis, and best practices for device testing with major chipset vendors, reducing ramp-up time by 30\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS (AI/ML)-----------
+\section{AI/ML Projects}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {CNN-QAM-Denoiser}{\small \href{https://github.com/LuisGeralda/CNN-QAM-Denoiser}{(GitHub Link)}}
+    {Deep Learning for QAM Audio Signals}{}
+    \resumeItemListStart
+      \resumeItem{Developed a CNN-based approach to denoise QAM-modulated audio signals, enhancing communication clarity in noisy channels.}
+      \resumeItem{Used Python \& TensorFlow for training; demonstrated a 30\% SNR improvement in synthetic test datasets.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {LTE-KPI-Kmeans-Clustering}{\small \href{https://github.com/LuisGeralda/LTE-KPI-Kmeans-Clustering}{(GitHub Link)}}
+    {Coverage Optimization via K-means}{}
+    \resumeItemListStart
+      \resumeItem{Analyzed LTE KPI datasets (RSRP, RSRQ, throughput) using K-means clustering to identify coverage and cell-edge performance gaps.}
+      \resumeItem{Recommended parameter changes that improved cluster coverage uniformity by 15\% in a proof-of-concept environment.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {International Technological Institute}{GPA: 4.0}
+    {M.S. in Software Engineering (AI Concentration)}{Santa Clara, CA}
+  \resumeSubheading
+    {Kennesaw State University}{GPA: 3.81}
+    {B.S. in Electrical Engineering Technology}{Marietta, GA}
+\resumeSubHeadingListEnd
+
+\end{document}
